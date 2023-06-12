@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --bg1: #2b2b2b;
+    --bg2: #505050;
+    --body: white;
+    --brand: #dd3333;
+    --white: #fff;
+}
+
+body{
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--body);
+    line-height: 1.8;
+    background-color: var(--bg1);
+}
+
+.container{
+    width: 1200px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Dela Gothic One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+a{
+    color: var(--body);
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+a:hover{
+    color: var(--brand);
+}
+
+.link-more{
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.link-more .icon{
+    transition: all 0.4s ease;
+}
+
+.link-more:hover .icon{
+    transform: translateX(8px);
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/* Intro Section */
+.intro{
+    margin-bottom: 60px;
+}
+
+.intro h1{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.intro h6{
+    color: var(--brand);
+}
+
+.intro p{
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Intro Section Ends */
+
+/* Navbar */
+.navbar{
+    background: linear-gradient(to bottom,#1B1F34, rgba(41, 42, 43, 0.2));
+}
+
+.navbar .navbar-nav .nav-link.active{
+    color: var(--brand);
+}
+
+.navbar-brand{
+    font-family: "Delta Gothic One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+}
+
+
+/* Navbar ends */
+
+/* Hero Section */
+
+#hero{
+    background-image: url("../img/bg-img-02-free-img.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+}
+
+hr {
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 12px;
+    background: white;
+    margin-bottom: 50px;
+}
+
+#hero p{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+/* Hero Section Ends */
+
+/* BTN Section Start */
+.btn{
+    padding: 16px 36px;
+    font-family: "Delta Gothic One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.4s ease;
+    border-radius: 0;
+    margin-top: 25px;
+}
+
+.btn-brand{
+    background-color: var(--brand);
+}
+
+.btn-brand:hover{
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-brand{
+    background-color: var(--brand);
+    color: white;
+    border-color: white;
+}
+
+.btn-outline-brand:hover{
+    background-color: rgba(255, 255, 255, 0.898);
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+/* BTN Section ends */
+
+/* About Section */
+#about{
+    position: relative;
+}
+
+#about::after{
+    content: "";
+    width: 25%;
+    height: 100%;
+    background-color: var(--brand);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#about h6{
+    color: var(--brand);
+}
+
+#about h1{
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+#about .signature{
+    width: unset;
+}
+
+/* About Section ends */
+
+/* Service Section starts */
+#services{
+    background: var(--bg1);
+}
+
+
+#services .service .content{
+    padding: 32px;
+}
+
+#services .service p{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+/* service Section ends */
+
+/* Features Section */
+#features{
+    background-color: var(--bg1);
+}
+
+.features{
+    display: flex;
+}
+
+.features .icon__features{
+    font-size: 33px;
+    color: var(--brand);
+    line-height: 1;
+    margin-right: 16px;
+}
+
+.features p{
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/* Features Section Ends */
+
+/* Team Section */
+.team-member{
+    position: relative;
+}
+
+.team-member .social-links{
+    position: absolute;
+    top: 0px;
+    transition: all 0.4s ease;
+}
+
+.social-links a{
+    width: 48px;
+    height: 48px;
+    background-color: var(--bg2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a:hover{
+    background-color: var(--brand);
+    color: var(--bg2);
+}
+/* Team Section Ends*/
+
+/* Reviews Section */
+#reviews{
+    background-color: var(--bg2);
+}
+
+.review{
+    padding: 32px;
+    background-color: var(--bg1);
+    position: relative;
+}
+
+.review .icon{
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand);
+    color: var(--bg2);
+    border-radius: 100px;
+    position: absolute;
+    right: 32px;
+}
+
+.review img{
+    width: 60px;
+    border-radius: 100px;
+}
+/* Reviews Section Ends */
+
+/* Blogs Section */
+#blogs{
+    background-color: var(--bg1);
+}
+
+.blog-post{
+    position: relative;
+}
+
+.blog-post .date{
+    width: 100px;
+    height: 100px;
+    background-color: var(--brand);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.blog-post .day{
+    font-size: 32px;
+    line-height: 1;
+    font-family: "Dela Gothic One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--bg1);
+}
+
+.blog-post .year{
+    color: var(--bg1);
+}
+/* Blogs Section Ends */
+
+/* Bookings Section */
+#booking{
+    background: linear-gradient(to right,rgba(27, 31, 52, 0.8), rgba(27, 31, 52, 0.8)), url(../img/cover_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#booking form{
+    background-color: var(--bg1);
+    padding: 32px;
+}
+
+#booking form .form-control{
+    background-color: var(--bg2);
+    border-radius: 0;
+    margin-bottom: 5px;
+    border-color: var(--bg2);
+    border: 2px solid var(--bg2);
+    color: var(--white);
+}
+
+#booking form input{
+    height: 58px;
+}
+
+#booking form .form-control:focus{
+    box-shadow: none;
+    border-left-color: var(--brand);
+}
+/* Bookings Section Ends */
+
+
+span .footer{
+    color: var(--brand);
+}
+
+footer{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+footer .social-links{
+    display: flex;
+}
+
+.ff span{
+    color: var(--brand);
+}
+
+footer .social-links a{
+    margin-right: 5px;
+}
+
+.footer-top{
+    padding-bottom: 19px;
+}
+
+
+/* Footer Ends */
